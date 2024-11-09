@@ -23,7 +23,7 @@ const OurStory: React.FC = () => {
           Welcome to our story! We started this journey with a vision to create exceptional experiences for our customers Our passion for quality and dedication to excellence drive us to deliver the best services possible
         </p>
         <p className="text-gray-300">
-          From humble beginnings we have grown into a trusted name in the industry, thanks to our loyal customers and hard-working team Every step we take is guided by our commitment to innovation and improvement
+          From humble beginnings we have grown into a trusted name in the industryec thanks to our loyal customers and hard-working team Every step we take is guided by our commitment to innovation and improvement
         </p>
         <p className="text-gray-300">
           We believe in the power of relationships and aim to foster lasting connections with our clients Your satisfaction is our top priority and we continuously strive to exceed your expectations

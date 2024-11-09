@@ -4,7 +4,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 
-const Testimonials: React.FC = () => {
+const testimonial: React.FC = () => {
   const testimonials = [
     {
       name: 'John Doe',
@@ -50,7 +50,7 @@ const Testimonials: React.FC = () => {
       name: 'Sophia Anderson',
       text: 'I highly recommend their services to everyone',
       image: '/assests/c9.webp'
-    },
+    }
   ];
 
   return (
@@ -60,7 +60,7 @@ const Testimonials: React.FC = () => {
         className='absolute inset-0 bg-cover bg-center'
         style={{
           backgroundImage: 'url(https://png.pngtree.com/thumb_back/fh260/background/20240705/pngtree-spraying-of-neckerchief-from-bottle-of-perfume-image_15860490.jpg)',
-          zIndex: -1, 
+          zIndex: -1
         }}
       >
        
@@ -84,7 +84,7 @@ const Testimonials: React.FC = () => {
               height={100}
               className='rounded-full w-16 h-16 mb-4'
             />
-            <p className='text-gray-400 mb-2'>'{testimonial.text}'</p>
+            <p className='text-gray-400 mb-2'>{testimonial.text}</p>
             <h4 className='font-semibold text-white'>{testimonial.name}</h4>
           </motion.div>
         ))}
@@ -93,4 +93,4 @@ const Testimonials: React.FC = () => {
   );
 };
 
-export default Testimonials;
+export default testimonial;

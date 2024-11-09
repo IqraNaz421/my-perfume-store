@@ -39,12 +39,12 @@ const PerfumeSlider: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
   const [selectedBrand, setSelectedBrand] = useState<string>("all");
   const [selectedIntensity, setSelectedIntensity] = useState<string>("all");
-  const [cart, setCart] = useState<Product[]>([]);
+  // const [cart, setCart] = useState<Product[]>([]);
 
-  const addToCart = (product: Product) => {
-    setCart((prevCart) => [...prevCart, product]);
-    alert(`${product.name} added to cart!`);
-  };
+  // const addToCart = (product: Product) => {
+  //   setCart((prevCart) => [...prevCart, product]);
+  //   alert(`${product.name} added to cart!`);
+  // };
 
   const sortedProducts = [...products].sort((a, b) => {
     switch (selectedSort) {
@@ -172,7 +172,7 @@ const PerfumeSlider: React.FC = () => {
               )}
             </div>
             <button
-              onClick={() => addToCart(product)}
+              // onClick={() => addToCart(product)}
               className="w-full bg-yellow-600 text-white p-2 rounded-md flex justify-center items-center space-x-2 mt-2"
             >
               <BsCart2 /> <span>Add to Cart</span>

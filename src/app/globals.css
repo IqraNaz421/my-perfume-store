@@ -2,26 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@import 'animate.css';
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
+
+
+    .scrolling-banner {
+      width: 100%;
+      background-color: #facc15; /* Yellow background */
+      color: white;
+      padding: 10px 0;
+      font-weight: bold;
+      text-align: center;
+      overflow: hidden; /* Hide overflow for scrolling */
+    }
+  
+    .scrolling-banner p {
+      white-space: nowrap;
+      display: inline-block;
+      animation: marquee 10s linear infinite; /* Define scrolling animation */
+    }
+  
+    /* Keyframes for the scrolling animation */
+    @keyframes marquee {
+      0% {
+        transform: translateX(100%); /* Start from right */
+      }
+      100% {
+        transform: translateX(-100%); /* End at left */
+      }
+    }
+  
+  

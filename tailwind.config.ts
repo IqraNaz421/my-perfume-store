@@ -11,6 +11,8 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary: '#BD83B6',  // Light Pink
+        secondary: '#473E66', // Dark Purple
       },
     },
   },
